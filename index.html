@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dashboard</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f082d6a8ec49e7e043726d60702a4b61"></script>
+</head>
+<body>
+    <div class="navbar">
+        <p class="date"></p>
+        <h1 class="time"></h1>
+        <a href="index.html" class="btn"><img src="images/home_icon.png" class="icon"><p class="icon_p">home</p></a>
+        <a href="index1.html" class="btn"><img src="images/map_icon.png" class="icon"><p class="icon_p">map</p></a>
+        <a href="index2.html" class="btn"><img src="images/graph_icon.png" class="icon"><p class="icon_p">graph</p></a>
+        <a href="http://yghahm.cafe24.com/loin.php" target="_blank"><h1 class="text">MDS</h1></a>
+        
+        <div class="now">
+            <img id="todayImg">
+            <br><span class="todayWeather" id="weatherToday1"></span>
+            <br><span class="todayWeather" id="weatherToday2"></span>
+        </div>
+    </div>
+    <div class="logo">
+        <img src="images/logo.png" style="height: 75px;">
+    </div>
+
+    <div class="container vis-weather">
+        <div id="title_w"><h1>전국 날씨</h1></div>
+        <ul class="weatherInfo list-group list-group-flush weather">
+            <li class="list-group-item weather_li0"><img class="image" id="img0"></li>
+            <li class="list-group-item weather_li1"><img class="image" id="img1"></li>           
+            <li class="list-group-item weather_li2"><img class="image" id="img2"></li>
+            <li class="list-group-item weather_li3"><img class="image" id="img3"></li>
+            <li class="list-group-item weather_li4"><img class="image" id="img4"></li>
+            <li class="list-group-item weather_li5"><img class="image" id="img5"></li>
+            <li class="list-group-item weather_li6"><img class="image" id="img6"></li>
+            <li class="list-group-item weather_li7"><img class="image" id="img7"></li>
+            <li class="list-group-item weather_li8"><img class="image" id="img8"></li>
+            <li class="list-group-item weather_li9"><img class="image" id="img9"></li>
+            <li class="list-group-item weather_li10"><img class="image" id="img10"></li>    
+        </ul>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
