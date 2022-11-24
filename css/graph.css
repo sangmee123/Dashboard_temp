@@ -78,7 +78,7 @@ a {
 .highcharts-figure1,
 .highcharts-data-table table {
     display: inline-block;
-    min-width: 360px;
+    min-width: 365px;
     max-width: 300px; 
     margin-left: 350px;  
     margin-right: 50px;
@@ -122,157 +122,20 @@ a {
 }
 
 /*chart2*/
-.highcharts-figure2 .chart-container {
-    width: 360px;
-    height: 200px;
-    border-radius: 15px 15px 15px 15px;
-    margin-top: 30px;
-}
-
-.highcharts-figure2,
-.highcharts-data-table table {
-    margin: 0 auto;
-    margin-left: 350px;
-    float: left;
-}
-
-.highcharts-data-table table {
-    font-family: Verdana, sans-serif;
-    border-collapse: collapse;
-    margin: 10px auto;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-}
-
-.highcharts-data-table caption {
-    padding: 1em 0;
-    font-size: 1.2em;
-    color: #555;
-}
-
-.highcharts-data-table th {
-    font-weight: 600;
-    padding: 0.5em;
-}
-
-.highcharts-data-table td,
-.highcharts-data-table th,
-.highcharts-data-table caption {
-    padding: 0.5em;
-}
-
-.highcharts-data-table thead tr,
-.highcharts-data-table tr:nth-child(even) {
-    background: #f8f8f8;
-}
-
-.highcharts-data-table tr:hover {
-    background: #f1f7ff;
-}
-
-/*chart3*/
-.highcharts-figure3,
-.highcharts-data-table table {
-    min-width: 310px;
-    max-width: 700px;   
-}
-
-#container3 {
-    height: 400px;
+#chartdiv {
     margin-top: 60px;
-    border-radius: 15px 15px 15px 15px;   
-}
-
-.highcharts-data-table table {
-    font-family: Verdana, sans-serif;
-    border-collapse: collapse;
-    border: 1px solid #ebebeb;
-    margin: 10px auto;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-}
-
-.highcharts-data-table caption {
-    padding: 1em 0;
-    font-size: 1.2em;
-    color: #555;    
-}
-
-.highcharts-data-table th {
-    font-weight: 600;
-    padding: 0.5em;
-}
-
-.highcharts-data-table td,
-.highcharts-data-table th,
-.highcharts-data-table caption {
-    padding: 0.5em;
-}
-
-.highcharts-data-table thead tr,
-.highcharts-data-table tr:nth-child(even) {
-    background: #f8f8f8;
-}
-
-.highcharts-data-table tr:hover {
-    background: #f1f7ff;
-}
-
-/*chart4*/
-.highcharts-figure4,
-.highcharts-data-table table {
-    min-width: 310px;
-    max-width: 750px;
-}
-
-#container4 {
-    height: 430px;
+    margin-left: 760px;
+    width: 750px;
+    height: 400px;
+    background-color: white;
     border-radius: 15px 15px 15px 15px;
-    margin-left: 50px; 
-    margin-top: 30px;
-}
-
-.highcharts-data-table table {
-    font-family: Verdana, sans-serif;
-    border-collapse: collapse;
-    border: 1px solid #ebebeb;
-    margin: 10px auto;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-}
-
-.highcharts-data-table caption {
-    padding: 1em 0;
-    font-size: 1.2em;
-    color: #555;   
-}
-.highcharts-data-table th {
-    font-weight: 600;
-    padding: 0.5em;
-}
-
-.highcharts-data-table td,
-.highcharts-data-table th,
-.highcharts-data-table caption {
-    padding: 0.5em;
-}
-
-.highcharts-data-table thead tr,
-.highcharts-data-table tr:nth-child(even) {
-    background: #f8f8f8;
-}
-
-.highcharts-data-table tr:hover {
-    background: #f1f7ff;
+    position: fixed;
 }
 
 /*기업 리스트*/
 .contents {
-    margin-top: -860px;
-    margin-left: 1515px;
+    margin-top: 60px;
+    margin-left: 1555px;
     position: fixed;
 }
 
@@ -302,19 +165,25 @@ h1 {
     padding: 15px;
 }
 
-/*chart5*/
-#container5 {
-    width: 450px;
-    height: 430px;
+.graph_bottom {
+    margin-top: 15px;
+}
+
+/*chart3*/
+#container {
+    height: 400px;
+    width: 365px;
+    margin-left: 350px;
+    float: left;
     border-radius: 15px 15px 15px 15px;
 }
 
-.highcharts-figure5,
+/*chart4*/
+.highcharts-figure4,
 .highcharts-data-table table {
-    min-width: 320px;
-    max-width: 700px;
-    margin-top: -430px;
-    margin-left: 1515px;    
+    width: 750px;
+    margin-left: 760px;
+    border-radius: 15px 15px 15px 15px;
     position: fixed;
 }
 
@@ -354,4 +223,54 @@ h1 {
     background: #f1f7ff;
 }
 
+/*chart5*/
+#container5 {
+    width: 450px;
+    height: 400px; 
+    margin-left: 840px;  
+    border-radius: 15px 15px 15px 15px;
+    position: fixed;
+}
 
+.highcharts-figure5,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 500px;
+    border-radius: 15px 15px 15px 15px;  
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}

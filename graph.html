@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Dashboard</title>
-    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/graph.css">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
@@ -14,15 +14,18 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-</head>
-<body>
+
     <div class="navbar">
         <p class="date"></p>
         <h1 class="time"></h1>
         <a href="index.html" class="btn"><img src="images/home_icon.png" class="icon"><p class="icon_p">home</p></a>
-        <a href="index1.html" class="btn"><img src="images/map_icon.png" class="icon"><p class="icon_p">map</p></a>
-        <a href="index2.html" class="btn"><img src="images/graph_icon.png" class="icon"><p class="icon_p">graph</p></a>
+        <a href="map.html" class="btn"><img src="images/map_icon.png" class="icon"><p class="icon_p">map</p></a>
+        <a href="graph.html" class="btn"><img src="images/graph_icon.png" class="icon"><p class="icon_p">graph</p></a>
         <a href="http://yghahm.cafe24.com/loin.php" target="_blank"><h1 class="text">MDS</h1></a>
 
         <div class="now">
@@ -36,23 +39,12 @@
     </div>
 
 
-    <div class="graph">
+    <div class="graph_top">
         <figure class="highcharts-figure1">
             <div id="container1"></div>
         </figure>
 
-        <figure class="highcharts-figure3">
-            <div id="container3"></div>
-        </figure>
-        
-        <figure class="highcharts-figure2">
-            <div id="container-speed" class="chart-container"></div>
-            <div id="container-rpm" class="chart-container"></div>
-        </figure>
-
-        <figure class="highcharts-figure4">
-            <div id="container4"></div>
-        </figure>
+        <div id="chartdiv"></div>
 
         <div class="contents">
             <div id="menu">
@@ -76,12 +68,19 @@
                 </ul><hr>
             </div>
         </div>
+    </div>
+
+    <div class="graph_bottom">
+        <div id="container"></div>
+
+        <figure class="highcharts-figure4">
+            <div id="container4"></div>
+        </figure>
 
         <figure class="highcharts-figure5">
             <div id="container5"></div>
         </figure>
     </div>
-
-    <script src="js/index2.js"></script>
+    <script src="js/graph.js"></script>
 </body>
 </html>
